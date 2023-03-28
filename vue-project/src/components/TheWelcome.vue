@@ -28,11 +28,12 @@ import SupportIcon from "./icons/IconSupport.vue";
     <template #heading>Community</template>
     <img
       class="blueberry"
-      src="../assets/blueberry.jpg"
-      width="125"
-      height="125"
+      src="../assets/blueberry.png"
+      width="90"
+      height="90"
     />
     <img class="bowl" src="../assets/bowl.png" width="125" height="125" />
+    <img class="coco" src="../assets/coco.png" width="90" height="90" />
   </WelcomeItem>
 
   <WelcomeItem>
