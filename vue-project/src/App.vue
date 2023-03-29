@@ -1,11 +1,17 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import TheWelcome from "./components/TheWelcome.vue";
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <img
+      alt="bowl"
+      class="bowl"
+      src="./assets/bowl.png"
+      width="325"
+      height="325"
+    />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
@@ -33,7 +39,9 @@ header {
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
-
+  .bowl {
+    margin-left: 110px;
+  }
   .logo {
     margin: 0 2rem 0 0;
   }
