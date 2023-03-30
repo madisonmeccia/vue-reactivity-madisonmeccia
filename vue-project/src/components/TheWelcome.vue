@@ -24,10 +24,13 @@ import SupportIcon from "./icons/IconSupport.vue";
       width="90"
       height="90"
     />
+    <img class="raz" src="../assets/raz.png" width="80" height="65" />
+    <img class="gg" src="../assets/gg.png" width="60" height="60" />
+    <img class="drizzle" src="../assets/drizzle.webp" width="90" height="90" />
     <img class="coco" src="../assets/coco.png" width="90" height="90" />
-    <img class="acai" src="../assets/acai.png" width="90" height="90" />
     <img class="blueraz" src="../assets/blueraz.png" width="90" height="90" />
     <img class="pitaya" src="../assets/pitaya.png" width="90" height="90" />
+    <img class="acai" src="../assets/acai.png" width="90" height="90" />
   </WelcomeItem>
 
   <WelcomeItem>
