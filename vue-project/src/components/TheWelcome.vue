@@ -24,7 +24,9 @@ import SupportIcon from "./icons/IconSupport.vue";
       width="90"
       height="90"
     />
-    <img class="raz" src="../assets/raz.png" width="80" height="65" />
+    <button v-on:click="redirect_to_login">
+      img (class="raz" src="../assets/raz.png" width="80" height="65")
+    </button>
     <img class="gg" src="../assets/gg.png" width="60" height="60" />
     <img class="drizzle" src="../assets/drizzle.webp" width="90" height="90" />
     <img class="coco" src="../assets/coco.png" width="90" height="90" />
