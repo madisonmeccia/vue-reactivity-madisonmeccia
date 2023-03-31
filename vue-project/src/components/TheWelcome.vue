@@ -24,9 +24,8 @@ import SupportIcon from "./icons/IconSupport.vue";
       width="90"
       height="90"
     />
-    <button v-on:click="redirect_to_login">
-      img (class="raz" src="../assets/raz.png" width="80" height="65")
-    </button>
+
+    <img (class="raz" src="../assets/raz.png" width="80" height="65" />
     <img class="gg" src="../assets/gg.png" width="60" height="60" />
     <img class="drizzle" src="../assets/drizzle.webp" width="90" height="90" />
     <img class="coco" src="../assets/coco.png" width="90" height="90" />
@@ -36,10 +35,10 @@ import SupportIcon from "./icons/IconSupport.vue";
   </WelcomeItem>
 
   <WelcomeItem>
-    <template #icon>
+    <template id="icon">
       <SupportIcon />
     </template>
-    <template #heading>Support Vue</template>
+    <template id="heading">Support Vue</template>
 
     As an independent project, Vue relies on community backing for its
     sustainability. You can help us by
