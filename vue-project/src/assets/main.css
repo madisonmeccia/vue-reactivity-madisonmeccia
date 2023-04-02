@@ -7,7 +7,9 @@
 
   font-weight: normal;
 }
-
+body{
+background-color: rgb(241, 207, 212);
+}
 a,
 .green {
   text-decoration: none;
