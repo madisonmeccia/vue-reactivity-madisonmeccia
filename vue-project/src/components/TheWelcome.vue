@@ -20,25 +20,20 @@ export default {
     myFunction() {
       //create a div element
       //var div = document.createElement("div");
-
       //create an image element
       //var img = document.createElement("img");
-
       //add image src property
       //img.src = "../assets/blueberry.png";
-
       //append div as a child to body
       //document.body.appendChild(div);
-
       //append image as a child to div
       //div.appendChild(img);
-      alert("This function ran");
-      var elem = document.createElement("img");
-      elem.setAttribute("src", "../assets/blueberry.png");
-      elem.setAttribute("height", "50");
-      elem.setAttribute("width", "50");
-
-      document.getElementById("placehere").appendChild(elem);
+      //alert("This function ran");
+      //let elem = document.createElement("img");
+      //elem.setAttribute("src", "../assets/blueberry.png");
+      // elem.setAttribute("height", "50");
+      // elem.setAttribute("width", "50");
+      // document.getElementById("placehere").appendChild(elem);
     },
   },
 
