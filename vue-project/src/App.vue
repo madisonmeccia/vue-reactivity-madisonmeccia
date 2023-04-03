@@ -4,17 +4,6 @@ import TheWelcome from "./components/TheWelcome.vue";
 </script>
 
 <template>
-  <header>
-    <h1 class="h">build your dream acai bowl order!</h1>
-    <img
-      alt="bowl"
-      class="bowl"
-      src="./assets/bowl.png"
-      width="325"
-      height="325"
-    />
-  </header>
-
   <main>
     <TheWelcome />
   </main>

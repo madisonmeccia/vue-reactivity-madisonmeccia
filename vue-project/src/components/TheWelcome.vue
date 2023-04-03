@@ -71,7 +71,7 @@ function clear() {
     @click="addItem('Blueberry')"
     class="blueberry"
     src="../assets/blueberry.png"
-    width="90"
+    width="110"
     height="90"
   />
   <img
@@ -145,10 +145,19 @@ function clear() {
     width="90"
     height="90"
   />
+  <header>
+    <h1 class="h">build your dream acai bowl order!</h1>
+    <img
+      alt="bowl"
+      class="bowl"
+      src="../assets/bowl.png"
+      width="325"
+      height="325"
+    />
+  </header>
   <ul id="list">
     <li v-for="item in items">{{ item }}</li>
   </ul>
-  <button class="clear" onclick="clear()">reset order</button>
 </template>
 <style scoped>
 #list {
@@ -163,5 +172,22 @@ function clear() {
   color: white;
   font-family: fantasy;
   font-size: 15px;
+}
+.bowl {
+  position: relative;
+  margin-left: 110px;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+.h {
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 110px;
+  z-index: 2;
+  font-family: fantasy;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  width: 250px;
 }
 </style>
