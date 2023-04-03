@@ -47,6 +47,9 @@ export default {
     console.log(`The initial count is ${this.count}.`);
   },
 };
+function clear() {
+  list = "";
+}
 </script>
 
 <template>
@@ -86,18 +89,25 @@ export default {
     height="60"
   />
   <img
+    @click="addItem('Banana')"
+    class="ban"
+    src="../assets/ban.png"
+    width="80"
+    height="60"
+  />
+  <img
     @click="addItem('Chocolate drizzle')"
     class="choc"
     src="../assets/choc.png"
     width="90"
-    height="90"
+    height="80"
   />
   <img
     @click="addItem('Honey')"
     class="drizzle"
     src="../assets/drizzle.webp"
     width="90"
-    height="90"
+    height="80"
   />
 
   <img
@@ -111,13 +121,20 @@ export default {
     @click="addItem('bluerazz base')"
     class="blueraz"
     src="../assets/blueraz.png"
-    width="90"
+    width="95"
     height="90"
   />
   <img
     @click="addItem('pitaya base')"
     class="pitaya"
     src="../assets/pitaya.png"
+    width="95"
+    height="90"
+  />
+  <img
+    @click="addItem('acai base')"
+    class="acai"
+    src="../assets/acai.png"
     width="90"
     height="90"
   />
@@ -128,24 +145,23 @@ export default {
     width="90"
     height="90"
   />
-  <img
-    @click="addItem('acai base')"
-    class="acai"
-    src="../assets/acai.png"
-    width="90"
-    height="90"
-  />
-  <ul class="list">
+  <ul id="list">
     <li v-for="item in items">{{ item }}</li>
   </ul>
-  <button onclick="value =''">reset order</button>
+  <button class="clear" onclick="clear()">reset order</button>
 </template>
 <style scoped>
-.list {
+#list {
   position: absolute;
   font-family: cursive;
   color: maroon;
   text-align: center;
   font-size: large;
+}
+.clear {
+  background-color: mediumslateblue;
+  color: white;
+  font-family: fantasy;
+  font-size: 15px;
 }
 </style>

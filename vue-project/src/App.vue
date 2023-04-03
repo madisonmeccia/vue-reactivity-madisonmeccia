@@ -23,6 +23,7 @@ import TheWelcome from "./components/TheWelcome.vue";
 .bowl {
   margin-left: 110px;
   z-index: 1;
+  margin-bottom: 10px;
 }
 .h {
   position: absolute;
