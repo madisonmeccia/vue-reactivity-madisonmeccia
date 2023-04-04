@@ -3,44 +3,19 @@ export default {
   // reactive state
   data() {
     return {
-      count: 0,
       items: [],
     };
   },
 
   // functions that mutate state and trigger updates
   methods: {
-    increment() {
-      this.count++;
-    },
     addItem(itemName) {
       this.items.push(itemName);
-      myFunction();
-    },
-    myFunction() {
-      //create a div element
-      //var div = document.createElement("div");
-      //create an image element
-      //var img = document.createElement("img");
-      //add image src property
-      //img.src = "../assets/blueberry.png";
-      //append div as a child to body
-      //document.body.appendChild(div);
-      //append image as a child to div
-      //div.appendChild(img);
-      //alert("This function ran");
-      //let elem = document.createElement("img");
-      //elem.setAttribute("src", "../assets/blueberry.png");
-      // elem.setAttribute("height", "50");
-      // elem.setAttribute("width", "50");
-      // document.getElementById("placehere").appendChild(elem);
     },
   },
 
   // lifecycle hooks
-  mounted() {
-    console.log(`The initial count is ${this.count}.`);
-  },
+  mounted() {},
 };
 function clear() {
   list = "";
@@ -63,42 +38,42 @@ function clear() {
     "
   ></div>
   <img
-    @click="addItem('Blueberry')"
+    @click="addItem('../src/assets/blueberry.png')"
     class="blueberry"
     src="../assets/blueberry.png"
     width="110"
     height="90"
   />
   <img
-    @click="addItem('Strawberry')"
+    @click="addItem('../src/assets/strw.png')"
     class="strw"
     src="../assets/strw.png"
     width="110"
     height="70"
   />
   <img
-    @click="addItem('Gronola')"
+    @click="addItem('../src/assets/gg.png')"
     class="gg"
     src="../assets/gg.png"
     width="60"
     height="60"
   />
   <img
-    @click="addItem('Banana')"
+    @click="addItem('../src/assets/ban.png')"
     class="ban"
     src="../assets/ban.png"
     width="80"
     height="60"
   />
   <img
-    @click="addItem('Chocolate drizzle')"
+    @click="addItem('../src/assets/ban.png')"
     class="choc"
     src="../assets/choc.png"
     width="90"
     height="80"
   />
   <img
-    @click="addItem('Honey')"
+    @click="addItem('../src/assets/drizzle.webp')"
     class="drizzle"
     src="../assets/drizzle.webp"
     width="90"
@@ -106,35 +81,35 @@ function clear() {
   />
 
   <img
-    @click="addItem('coconut base')"
+    @click="addItem('../src/assets/coco.png')"
     class="coco"
     src="../assets/coco.png"
     width="90"
     height="90"
   />
   <img
-    @click="addItem('bluerazz base')"
+    @click="addItem('../src/assets/coco.png')"
     class="blueraz"
     src="../assets/blueraz.png"
     width="95"
     height="90"
   />
   <img
-    @click="addItem('pitaya base')"
+    @click="addItem('../src/assets/pitaya.png')"
     class="pitaya"
     src="../assets/pitaya.png"
     width="95"
     height="90"
   />
   <img
-    @click="addItem('acai base')"
+    @click="addItem('../src/assets/acai.png')"
     class="acai"
     src="../assets/acai.png"
     width="90"
     height="90"
   />
   <img
-    @click="addItem('greenz base')"
+    @click="addItem('../src/assets/green.png')"
     class="greenz"
     src="../assets/green.png"
     width="90"
@@ -142,12 +117,21 @@ function clear() {
   />
   <header>
     <h1 class="h">build your dream acai bowl order!</h1>
+
     <img
       alt="bowl"
       class="bowl"
       src="../assets/bowl.png"
       width="325"
       height="325"
+    />
+
+    <img
+      v-for="item in items"
+      :src="item"
+      width="90"
+      height="90"
+      class="item"
     />
   </header>
   <ul id="list">
@@ -184,5 +168,19 @@ function clear() {
   color: white;
   text-align: center;
   width: 250px;
+}
+.bowlanditems {
+  position: relative;
+  display: inline;
+  border: 4px dotted blue;
+  height: 500px;
+  width: 500px;
+}
+
+.item {
+  position: absolute;
+  top: 100px;
+  left: 225px;
+  z-index: 3;
 }
 </style>
