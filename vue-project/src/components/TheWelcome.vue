@@ -36,97 +36,89 @@ export default {
   ></div>
   <div class="allItems">
     <img
-      @click="addItem('../assets/blueberry.png')"
+      @click="addItem('/blueberry.png')"
       class="blueberry"
-      src="../assets/blueberry.png"
+      src="/blueberry.png"
       width="110"
       height="90"
     />
     <img
-      @click="addItem('../assets/strw.png')"
+      @click="addItem('/strw.png')"
       class="strw"
-      src="../assets/strw.png"
+      src="/strw.png"
       width="110"
       height="70"
     />
     <img
-      @click="addItem('../assets/gg.png')"
+      @click="addItem('/gg.png')"
       class="gg"
-      src="../assets/gg.png"
+      src="/gg.png"
       width="60"
       height="60"
     />
     <img
-      @click="addItem('../assets/ban.png')"
+      @click="addItem('/ban.png')"
       class="ban"
-      src="../assets/ban.png"
+      src="/ban.png"
       width="80"
       height="60"
     />
     <img
-      @click="addItem('../assets/choc.png')"
+      @click="addItem('/choc.png')"
       class="choc"
-      src="../assets/choc.png"
+      src="/choc.png"
       width="90"
       height="80"
     />
     <img
-      @click="addItem('../assets/drizzle.webp')"
+      @click="addItem('/drizzle.webp')"
       class="drizzle"
-      src="../assets/drizzle.webp"
+      src="/drizzle.webp"
       width="90"
       height="80"
     />
 
     <img
-      @click="addItem('../assets/coco.png')"
+      @click="addItem('/coco.png')"
       class="coco"
-      src="../assets/coco.png"
+      src="/coco.png"
       width="90"
       height="90"
     />
     <img
-      @click="addItem('../assets/blueraz.png')"
+      @click="addItem('/blueraz.png')"
       class="blueraz"
-      src="../assets/blueraz.png"
+      src="/blueraz.png"
       width="95"
       height="90"
     />
     <img
-      @click="addItem('../assets/pitaya.png')"
+      @click="addItem('/pitaya.png')"
       class="pitaya"
-      src="../assets/pitaya.png"
+      src="/pitaya.png"
       width="95"
       height="90"
     />
     <img
-      @click="addItem('../assets/acai.png')"
+      @click="addItem('/acai.png')"
       class="acai"
-      src="../assets/acai.png"
+      src="/acai.png"
       width="90"
       height="90"
     />
     <img
-      @click="addItem('../assets/green.png')"
+      @click="addItem('/green.png')"
       class="greenz"
-      src="../assets/green.png"
+      src="/green.png"
       width="90"
       height="90"
     />
-    <button @click="addItem('../assets/bowl1.png')" class="clear">
-      restart order!
-    </button>
+    <button @click="addItem('/bowl1.png')" class="clear">restart order!</button>
   </div>
   <header>
     <h1 class="h">build your dream acai bowl order!</h1>
 
-    <img
-      alt="bowl"
-      class="bowl"
-      src="../assets/bowl.png"
-      width="325"
-      height="325"
-    />
+    <img alt="bowl" class="bowl" src="/bowl.png" width="325" height="325" />
 
     <img
       v-for="item in items"
