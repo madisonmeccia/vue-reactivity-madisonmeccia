@@ -4,11 +4,12 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-
   font-weight: normal;
 }
 body{
-background-color: rgb(241, 207, 212);
+  background-color: rgb(245, 224, 227);
+//background-image: url("back.webp");
+margin-left: 25%;
 }
 a,
 .green {

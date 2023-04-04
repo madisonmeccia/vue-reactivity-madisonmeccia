@@ -24,13 +24,13 @@ h3 {
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 0.4rem;
-  color: var(--color-heading);
+  color: let(--color-heading);
 }
 
 @media (min-width: 1024px) {
   .item {
     margin-top: 0;
-    padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
+    padding: 0.4rem 0 1rem calc(let(--section-gap) / 2);
   }
 
   .heading {
@@ -39,7 +39,7 @@ h3 {
 
   .item:before {
     content: " ";
-    border-left: 1px solid var(--color-border);
+    border-left: 1px solid let(--color-border);
     position: absolute;
     left: 0;
     bottom: calc(50% + 25px);
@@ -48,7 +48,7 @@ h3 {
 
   .item:after {
     content: " ";
-    border-left: 1px solid var(--color-border);
+    border-left: 1px solid let(--color-border);
     position: absolute;
     left: 0;
     top: calc(50% + 25px);
