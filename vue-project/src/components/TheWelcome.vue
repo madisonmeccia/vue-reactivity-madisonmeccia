@@ -28,7 +28,7 @@ export default {
       left: 50px;
       top: 50px;
 
-      width: 150%;
+      width: 70%;
       height: 150px;
       padding: 0px;
       color: white;
@@ -113,7 +113,7 @@ export default {
       width="90"
       height="90"
     />
-    <button @click="addItem('../src/assets/bowl.png')" class="clear">
+    <button @click="addItem('../src/assets/bowl1.png')" class="clear">
       restart order!
     </button>
   </div>
@@ -171,7 +171,7 @@ export default {
   display: inline;
   border: 4px dotted blue;
   height: 500px;
-  width: 500px;
+  width: 200px;
 }
 
 .item {
